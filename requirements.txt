@@ -1,0 +1,21 @@
+# Versions actually used to produce the results in this repository
+# (Python 3.10.20, Windows 11).
+
+# Needed by every script that reads the shipped CSV / JSON files:
+#   build_per_case.py, icc_confidence_intervals.py, bland_altman.py,
+#   extract_checkpoint_dice.py, extract_442_percase.py
+numpy==2.2.6
+pandas==2.3.3
+matplotlib==3.10.9
+
+# Additionally needed to recompute the per-case metrics and the intensity
+# audit from the CT volumes:
+#   evaluate_100ep_full.py, intensity_scale_audit.py
+scipy==1.15.3
+nibabel==5.4.2
+
+# Needed only to retrain, or to regenerate the 4:4:2 dataset directory:
+#   make_442_splits.py
+# Install separately, following the nnU-Net instructions, since it pulls in
+# PyTorch and a CUDA build specific to your machine.
+# nnunetv2==2.8.1

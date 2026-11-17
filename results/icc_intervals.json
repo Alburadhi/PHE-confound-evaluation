@@ -1,0 +1,107 @@
+{
+  "bootstrap_B": 2000,
+  "seed": 20261113,
+  "threshold_ml": 2.0,
+  "threshold_rationale": "Pre-specified in an internal review on 18 July 2026 as a hypothesis to test, before the stratified ICCs were computed. The sweep below shows the conclusion is not sensitive to it.",
+  "cohort_median_ml": 2.6753082275390625,
+  "strata": [
+    {
+      "stratum": "Pooled",
+      "n": 115,
+      "icc": 0.4135981256791001,
+      "ci_low": 0.25724121263918676,
+      "ci_high": 0.6175000478489053,
+      "bootstrap_kept": 2000,
+      "bias_ml": 0.12854871185769773,
+      "loa_ml": 7.47471341964973
+    },
+    {
+      "stratum": "Small (<2 mL)",
+      "n": 49,
+      "icc": 0.05082121595250924,
+      "ci_low": -0.07530001735568924,
+      "ci_high": 0.15030406689082798,
+      "bootstrap_kept": 2000,
+      "bias_ml": 1.2775348041833816,
+      "loa_ml": 2.4697536451145057
+    },
+    {
+      "stratum": "Large (>=2 mL)",
+      "n": 66,
+      "icc": 0.23247891745991286,
+      "ci_low": 0.046369221432529764,
+      "ci_high": 0.4996737977023335,
+      "bootstrap_kept": 2000,
+      "bias_ml": -0.7244864172931887,
+      "loa_ml": 9.31792671680804
+    }
+  ],
+  "sweep": [
+    {
+      "cut_ml": 1.0,
+      "n_small": 30,
+      "icc_small": 0.058724408072925484,
+      "n_large": 85,
+      "icc_large": 0.32984619652781244
+    },
+    {
+      "cut_ml": 1.5,
+      "n_small": 36,
+      "icc_small": 0.04899650723016032,
+      "n_large": 79,
+      "icc_large": 0.3027749630143896
+    },
+    {
+      "cut_ml": 2.0,
+      "n_small": 49,
+      "icc_small": 0.05082121595250924,
+      "n_large": 66,
+      "icc_large": 0.23247891745991286
+    },
+    {
+      "cut_ml": 2.5,
+      "n_small": 55,
+      "icc_small": 0.04081819832195089,
+      "n_large": 60,
+      "icc_large": 0.18255009016124243
+    },
+    {
+      "cut_ml": 2.68,
+      "n_small": 58,
+      "icc_small": 0.13454634556613676,
+      "n_large": 57,
+      "icc_large": 0.1768998430340272
+    },
+    {
+      "cut_ml": 3.0,
+      "n_small": 65,
+      "icc_small": 0.12102857189754675,
+      "n_large": 50,
+      "icc_large": 0.09841972115526035
+    },
+    {
+      "cut_ml": 4.0,
+      "n_small": 76,
+      "icc_small": 0.30693489191351786,
+      "n_large": 39,
+      "icc_large": 0.04048891596380804
+    },
+    {
+      "cut_ml": 5.0,
+      "n_small": 87,
+      "icc_small": 0.2709192371532316,
+      "n_large": 28,
+      "icc_large": 0.15408795301603784
+    }
+  ],
+  "separation": {
+    "pooled_icc": 0.4135981256791001,
+    "pooled_ci": [
+      0.25724121263918676,
+      0.6175000478489053
+    ],
+    "best_stratum_icc": 0.23247891745991286,
+    "pooled_exceeds_both_strata": true,
+    "pooled_ci_excludes_both_strata": true
+  }
+}

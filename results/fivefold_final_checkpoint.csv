@@ -1,0 +1,6 @@
+fold,dice_final_checkpoint,dice_best_checkpoint,source_log_final,source_log_best
+0,0.4457246071,0.4462249160,training_log_2026_7_9_12_42_23.txt,training_log_2026_7_9_17_57_41.txt
+1,0.4050817302,0.4031524809,training_log_2026_7_9_18_02_32.txt,training_log_2026_7_9_23_12_27.txt
+2,0.4646809200,0.4628898772,training_log_2026_7_9_23_17_39.txt,training_log_2026_7_10_04_54_49.txt
+3,0.4351623749,0.4658626026,training_log_2026_7_10_05_01_07.txt,training_log_2026_7_10_10_31_28.txt
+4,0.4100933862,0.4314484930,training_log_2026_7_10_10_38_31.txt,training_log_2026_7_10_15_58_06.txt

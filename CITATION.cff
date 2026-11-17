@@ -1,0 +1,39 @@
+cff-version: 1.2.0
+message: "If you use this code or these results, please cite the paper below."
+title: "PHE-confound-evaluation: splits, evaluation code and per-case results"
+type: software
+license: MIT
+authors:
+  - family-names: Alburadhi
+    given-names: Ahmed Waleed Hatem
+    affiliation: "Northeastern University, Shenyang, China; Al-Hakeem General Hospital, Najaf, Iraq"
+  - family-names: Kulwa
+    given-names: Frank
+    affiliation: "Northeastern University, Shenyang, China"
+  - family-names: Hasnain
+    given-names: Muhammad
+    affiliation: "Northeastern University, Shenyang, China"
+  - family-names: Ogunsona
+    given-names: Damilola
+    affiliation: "Northeastern University, Shenyang, China"
+  - family-names: Li
+    given-names: Chen
+    affiliation: "Northeastern University, Shenyang, China"
+    email: lichen@bmie.neu.edu.cn
+preferred-citation:
+  type: conference-paper
+  title: "A Confound Measurement Based Evaluation Approach for Perihematomal Edema Segmentation"
+  authors:
+    - family-names: Alburadhi
+      given-names: Ahmed Waleed Hatem
+    - family-names: Kulwa
+      given-names: Frank
+    - family-names: Hasnain
+      given-names: Muhammad
+    - family-names: Ogunsona
+      given-names: Damilola
+    - family-names: Li
+      given-names: Chen
+  conference:
+    name: "ICCVIT 2026"
+  year: 2026

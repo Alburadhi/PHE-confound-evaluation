@@ -1,0 +1,39 @@
+{
+  "protocol": "4:4:2 patient-level, 46 train / 23 test, 46 unused",
+  "checkpoint": "final (not best) - the test patients sit in nnU-Net's val slot, so best-checkpoint selection would be selection on the reported patients",
+  "n_replicates": 5,
+  "benchmark": 0.351,
+  "mean": 0.38959561776107693,
+  "sd": 0.024679001501587857,
+  "min": 0.3604736302018139,
+  "max": 0.41644560086155263,
+  "n_above_benchmark": 5,
+  "replicates": [
+    {
+      "replicate": 0,
+      "dice": 0.40749570630290727,
+      "n_test": 23
+    },
+    {
+      "replicate": 1,
+      "dice": 0.3672098731302026,
+      "n_test": 23
+    },
+    {
+      "replicate": 2,
+      "dice": 0.41644560086155263,
+      "n_test": 23
+    },
+    {
+      "replicate": 3,
+      "dice": 0.3604736302018139,
+      "n_test": 23
+    },
+    {
+      "replicate": 4,
+      "dice": 0.3963532783089082,
+      "n_test": 23
+    }
+  ],
+  "narrative": "Under the benchmark's own 4:4:2 partition the identical pipeline reaches a mean Dice of 0.390 \u00b1 0.025 across five replicates, spanning 0.360 to 0.416. Every replicate exceeds the published 0.351, so an advantage survives the correction for training-set size. It is substantially smaller than the five-fold comparison implies, and it is still not like-for-like: the metric-definition confound of Section 3.7 is not removed by this experiment and cannot be removed from the published description. The standard deviation across replicates is 0.025 (range 0.056), differing only in which patients fall in which partition. The five-fold protocol's fold-to-fold standard deviation is 0.026 over a range of 0.063, so the two designs are comparably variable per partition; what differs is that a 4:4:2 study reports one draw and a five-fold study reports the mean of five. Both arms are compared at the same checkpoint convention. The five-fold result reported in Section 5.2 is a best-checkpoint number (0.442); its final-checkpoint counterpart, which is what this experiment must be compared against, is 0.432. On that basis 0.043 Dice - roughly 52% of the 0.081 checkpoint-matched margin - is attributable to training on 80% of the cohort rather than 40%, and not to the pipeline. Given five replicates the share itself is loosely determined; 'about half' is as precise a statement as the data supports. The margin that survives a matched training budget is 0.039, and the weakest replicate clears the published value by only 0.009. With 5 replicates against a fixed published comparator, the smallest attainable two-sided p-value from an exact sign test is 0.0625, so no significance claim is made here. The comparator is itself a single number whose own sampling variance was never measured and cannot be recovered from the publication. What this experiment measures is that our pipeline moves by 0.06 Dice across 4:4:2 draws on this cohort, which is the order of uncertainty any single 4:4:2 number here should be read as carrying."
+}
